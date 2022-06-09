@@ -1,0 +1,21 @@
+__S0 100 0 ABS 0
+__S1 0 0 ABS 0
+__Hconfig 1000 0 CONFIG 4
+__Lconfig 0 0 CONFIG 4
+__Hcode 0 0 ABS 0
+__Lcode 0 0 ABS 0
+__Hdata 0 0 ABS 0
+__Ldata 0 0 ABS 0
+__Hudata_bank0 0 0 ABS 0
+__Ludata_bank0 0 0 ABS 0
+__Hudata 0 0 ABS 0
+__Ludata 0 0 ABS 0
+__Hspace_0 100 0 ABS 0
+__Lspace_0 0 0 ABS 0
+__Hspace_1 0 0 ABS 0
+__Lspace_1 0 0 ABS 0
+__Hspace_4 1FFF 0 ABS 0
+__Lspace_4 0 0 ABS 0
+%segments
+data 1DE 1FF STRCODE 1DE 0
+%locals
