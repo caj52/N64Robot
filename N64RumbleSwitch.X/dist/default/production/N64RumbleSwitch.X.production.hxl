@@ -8,10 +8,10 @@
 
 ### Memory Usage ###
  Intel Hex-file ranges:
-  0h - 29h		(dist/default/production\N64RumbleSwitch.X.production.hex)
+  0h - 2Bh		(dist/default/production\N64RumbleSwitch.X.production.hex)
   1FFEh - 1FFFh		(dist/default/production\N64RumbleSwitch.X.production.hex)
  Unused ranges:
-  2Ah - 1FFDh
+  2Ch - 1FFDh
 
 ### Hex Memory Map ###
  Legend:
@@ -22,6 +22,6 @@
 ----------------------------------------------------------
 00000000 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00000010 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-00000020 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- -- -- -- -- --
+00000020 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- -- -- --
 ----------------------------------------------------------
 00001FF0 | -- -- -- -- -- -- -- -- -- -- -- -- -- -- H1 H1

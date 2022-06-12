@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.36\pic\dat\en_msgs.txt -cs \
   -h+dist/default/production\N64RumbleSwitch.X.production.sym \
   --cmf=dist/default/production\N64RumbleSwitch.X.production.cmf -z \
-  -Q10F200 -oC:\Users\caj52\AppData\Local\Temp\xcAslqc.4 \
+  -Q10F200 -oC:\Users\caj52\AppData\Local\Temp\xcAsu6s.4 \
   -ver=XC8 PIC(R) Assembler \
   -Mdist/default/production/N64RumbleSwitch.X.production.map -E1 \
   --acfsm=1493 -ACODE=00h-0FFh -ASTRCODE=00h-0FFh -ASTRING=00h-0FFh \
@@ -23,11 +23,11 @@ Machine type is 10F200
                 Name                               Link     Load   Length Selector   Space Scale
 build/default/production/main.o
                 config                              FFF      FFF        1        0       4
-                resetVec                              0        0       15        0       0
+                resetVec                              0        0       16        0       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   CODE           
-                resetVec                              0        0       15         0
+                resetVec                              0        0       16         0
 
         CLASS   STRCODE        
 
@@ -62,18 +62,18 @@ UNUSED ADDRESS RANGES
 
         Name                Unused          Largest block    Delta
         BANK0            0010-001D              E           1
-        CODE             0015-00FF             EB           2
-        ENTRY            0015-00FF             EB           2
+        CODE             0016-00FF             EA           2
+        ENTRY            0016-00FF             EA           2
         IDLOC            0100-0103              4           2
         RAM              0010-001D              E           1
-        STRCODE          0015-00FF             EB           2
-        STRING           0015-00FF             EB           2
+        STRCODE          0016-00FF             EA           2
+        STRING           0016-00FF             EA           2
 
                                   Symbol Table
 
 __Hcode        code        0000  __Hconfig      config      1000
 __Hdata        data        0000  __HresetVec    resetVec    0000
-__Hspace_0     (abs)       0015  __Hspace_1     (abs)       0000
+__Hspace_0     (abs)       0016  __Hspace_1     (abs)       0000
 __Hspace_4     (abs)       1FFF  __Hudata       udata       0000
 __Hudata_bank0 udata_bank0 0000  __Lcode        code        0000
 __Lconfig      config      0000  __Ldata        data        0000

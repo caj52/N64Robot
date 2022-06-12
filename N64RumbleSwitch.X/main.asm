@@ -13,12 +13,13 @@ INIT:
     movlw ~(1 << 0x0005) 
     option      
     movlw (1 << GPIO_GP2_POSITION) 
+    tris GPIO 
     movlw (1 << GPIO_GP3_POSITION)  
     tris GPIO 
 I2CLOOP:
-    btfsc GPIO, GPIO_GP3_POSITION
-    goto I2CLOOP
+    btfss GPIO, GPIO_GP3_POSITION
     goto TOGGLEGP2
+    goto I2CLOOP
 TOGGLEGP2:
     btfss GPIO, GPIO_GP2_POSITION
     goto SetThenDelay
@@ -32,9 +33,9 @@ ClearThenDelay:
     goto DELAY
 DELAY:   			 
     movlw 128   		    
-    movwf 0x010   			
+    movwf 0x0010   			
 DELAY_LOOP:   		
-    decfsz 0x010, F   		
+    decfsz 0x0010, F   		
     goto DELAY_LOOP  
     goto I2CLOOP   			
  

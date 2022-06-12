@@ -30,14 +30,8 @@ void makeDL00(void)
 /* The game progressing process for stage 0 */
 void updateGame00(void)
 {  
-	nuContDataGetEx(controllerOne,0);
     nuContDataGetEx(controllerTwo,1);
 	
     if(controllerTwo[0].trigger & A_BUTTON)
-    {
-	    nuContRmbCheck(0);
-		//nuContRmbModeSet(0, NU_CONT_RMB_MODE_ENABLE);
-		//nuContRmbStart(0, 256, 60);
-	}
-
+	    nuContDataGetEx(controllerOne,0);
 }
