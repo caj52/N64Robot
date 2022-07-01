@@ -30,8 +30,8 @@ void makeDL00(void)
 /* The game progressing process for stage 0 */
 void updateGame00(void)
 {  
-    nuContDataGetEx(controllerTwo,1);
+    nuContDataGetEx(controllerOne,0);
 	
-    if(controllerTwo[0].trigger & A_BUTTON)
-	    nuContDataGetEx(controllerOne,0);
+    if(controllerOne[0].trigger & A_BUTTON)
+	    nuContDataGetEx(controllerTwo,1);
 }

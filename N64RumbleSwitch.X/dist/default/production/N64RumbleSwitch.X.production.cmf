@@ -12,7 +12,7 @@
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
 $build/default/production/main.o
-resetVec CODE 0 0 0 16 2 1
+resetVec CODE 0 0 0 15 2 1
 config CONFIG 4 FFF FFF 1 2 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -22,11 +22,11 @@ config CONFIG 4 FFF FFF 1 2 1
 %UNUSED
 RAM 10-1D 1
 BANK0 10-1D 1
-ENTRY 16-FF 2
+ENTRY 15-FF 2
 IDLOC 100-103 2
-CODE 16-FF 2
-STRCODE 16-FF 2
-STRING 16-FF 2
+CODE 15-FF 2
+STRCODE 15-FF 2
+STRING 15-FF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -53,16 +53,15 @@ $build/default/production/main.o
 9 resetVec CODE >24:C:\Users\caj52\OneDrive\Desktop\DEVUTIL\PersonalProjects\N64Robot\N64Robot\N64RumbleSwitch.X\main.asm
 A resetVec CODE >25:C:\Users\caj52\OneDrive\Desktop\DEVUTIL\PersonalProjects\N64Robot\N64Robot\N64RumbleSwitch.X\main.asm
 B resetVec CODE >26:C:\Users\caj52\OneDrive\Desktop\DEVUTIL\PersonalProjects\N64Robot\N64Robot\N64RumbleSwitch.X\main.asm
-C resetVec CODE >27:C:\Users\caj52\OneDrive\Desktop\DEVUTIL\PersonalProjects\N64Robot\N64Robot\N64RumbleSwitch.X\main.asm
+C resetVec CODE >28:C:\Users\caj52\OneDrive\Desktop\DEVUTIL\PersonalProjects\N64Robot\N64Robot\N64RumbleSwitch.X\main.asm
 D resetVec CODE >29:C:\Users\caj52\OneDrive\Desktop\DEVUTIL\PersonalProjects\N64Robot\N64Robot\N64RumbleSwitch.X\main.asm
-E resetVec CODE >30:C:\Users\caj52\OneDrive\Desktop\DEVUTIL\PersonalProjects\N64Robot\N64Robot\N64RumbleSwitch.X\main.asm
+E resetVec CODE >31:C:\Users\caj52\OneDrive\Desktop\DEVUTIL\PersonalProjects\N64Robot\N64Robot\N64RumbleSwitch.X\main.asm
 F resetVec CODE >32:C:\Users\caj52\OneDrive\Desktop\DEVUTIL\PersonalProjects\N64Robot\N64Robot\N64RumbleSwitch.X\main.asm
-10 resetVec CODE >33:C:\Users\caj52\OneDrive\Desktop\DEVUTIL\PersonalProjects\N64Robot\N64Robot\N64RumbleSwitch.X\main.asm
+10 resetVec CODE >34:C:\Users\caj52\OneDrive\Desktop\DEVUTIL\PersonalProjects\N64Robot\N64Robot\N64RumbleSwitch.X\main.asm
 11 resetVec CODE >35:C:\Users\caj52\OneDrive\Desktop\DEVUTIL\PersonalProjects\N64Robot\N64Robot\N64RumbleSwitch.X\main.asm
-12 resetVec CODE >36:C:\Users\caj52\OneDrive\Desktop\DEVUTIL\PersonalProjects\N64Robot\N64Robot\N64RumbleSwitch.X\main.asm
+12 resetVec CODE >37:C:\Users\caj52\OneDrive\Desktop\DEVUTIL\PersonalProjects\N64Robot\N64Robot\N64RumbleSwitch.X\main.asm
 13 resetVec CODE >38:C:\Users\caj52\OneDrive\Desktop\DEVUTIL\PersonalProjects\N64Robot\N64Robot\N64RumbleSwitch.X\main.asm
 14 resetVec CODE >39:C:\Users\caj52\OneDrive\Desktop\DEVUTIL\PersonalProjects\N64Robot\N64Robot\N64RumbleSwitch.X\main.asm
-15 resetVec CODE >40:C:\Users\caj52\OneDrive\Desktop\DEVUTIL\PersonalProjects\N64Robot\N64Robot\N64RumbleSwitch.X\main.asm
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -75,7 +74,7 @@ F resetVec CODE >32:C:\Users\caj52\OneDrive\Desktop\DEVUTIL\PersonalProjects\N64
 # was defined in a psect then <psect> will be "-". File-name
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
-__Hspace_0 16 0 ABS 0 - -
+__Hspace_0 15 0 ABS 0 - -
 __Hspace_1 0 0 ABS 0 - -
 __Hspace_4 1FFF 0 ABS 0 - -
 __Hudata_bank0 0 0 ABS 0 udata_bank0 -

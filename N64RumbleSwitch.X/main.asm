@@ -12,7 +12,8 @@ resetVec:
 INIT:       
     movlw ~(1 << 0x0005) 
     option      
-    movlw (1 << GPIO_GP2_POSITION) 
+    movlw (1 << GPIO_GP2
+    _POSITION) 
     tris GPIO 
     movlw (1 << GPIO_GP3_POSITION)  
     tris GPIO 
@@ -23,7 +24,6 @@ I2CLOOP:
 TOGGLEGP2:
     btfss GPIO, GPIO_GP2_POSITION
     goto SetThenDelay
-    btfsc GPIO, GPIO_GP2_POSITION
     goto ClearThenDelay
 SetThenDelay:
     bsf GPIO, GPIO_GP2_POSITION

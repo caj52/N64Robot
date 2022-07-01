@@ -250,7 +250,6 @@ I2CLOOP:
 TOGGLEGP2:
     btfss GPIO, GPIO_GP2_POSITION
     goto SetThenDelay
-    btfsc GPIO, GPIO_GP2_POSITION
     goto ClearThenDelay
 SetThenDelay:
     bsf GPIO, GPIO_GP2_POSITION
